@@ -24,7 +24,80 @@ Next, you can enter your SQL query in the SQL input box and click the 'Execute' 
 
 In the result table, you can set the display mode for each column, currently supporting text display and JSON tree view. Simply click on the table header to select the desired display mode.
 
+
 The SQL syntax used follows the SQLite syntax. Here are some examples:
+
+examples below is base on the json data:
+
+```json
+{
+  "teachers": [
+    {
+      "name": "Andrew Hernandez",
+      "id": 1,
+      "age": 30,
+      "major": "math",
+      "gender": "female",
+      "book": {
+        "name": "Calculus: Early Transcendentals",
+        "author": "James Stewart",
+        "publishedYear": 2015,
+        "pages": 1368,
+        "isbn": "978-1285741550",
+        "genre": "Mathematics"
+      },
+      "email": "andrew.hernandez@school.edu",
+      "yearsOfExperience": 5,
+      "officeLocation": "Building A, Room 102",
+      "courses": [
+        "Calculus I",
+        "Calculus II",
+        "Linear Algebra"
+      ]
+    },
+    {
+      "name": "Avery Howard",
+      "id": 2,
+      "age": 32,
+      "major": "physics",
+      "gender": "female",
+      "book": {
+        "name": "Introduction to Electrodynamics",
+        "author": "David J. Griffiths",
+        "publishedYear": 2017,
+        "pages": 624,
+        "isbn": "978-1108420419",
+        "genre": "Physics"
+      },
+      "email": "avery.howard@school.edu",
+      "yearsOfExperience": 8,
+      "officeLocation": "Building B, Room 205",
+      "courses": [
+        "Classical Mechanics",
+        "Electromagnetism",
+        "Quantum Mechanics"
+      ]
+    }
+  ],
+  "students": [
+    {
+      "teacherId": "1",
+      "name": "Olivia Martinez",
+      "id": 4,
+      "age": 21,
+      "gender": "female"
+    },
+    {
+      "name": "Michael Davis",
+      "id": 3,
+      "age": 19,
+      "gender": "male",
+      "teacherId": 5
+    }
+  ]
+}
+```
+
 
 select * from root.teachers
 
@@ -32,31 +105,4 @@ select * from root.teachers left join ...
 
 distinct
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.

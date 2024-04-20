@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'SQL Query on JSON Data',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/coding-5-61.svg').default,
     description: (
       <>
          Harness SQL's power on JSON datasets seamlessly with jsonSqlQuery's innovative querying capabilities.
@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Intuitive JSON Data Exploration',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/data-visualization-73.svg').default,
     description: (
       <>
         Navigate complex JSON hierarchies effortlessly through jsonSqlQuery's user-friendly tree view interface
@@ -29,7 +29,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Versatile Display Modes',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/user-interface-81.svg').default,
     description: (
       <>
         Enjoy flexible tabular and JSON tree display modes for comprehensive data analysis.
