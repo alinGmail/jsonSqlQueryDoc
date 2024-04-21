@@ -81,7 +81,7 @@ examples below is base on the json data:
   ],
   "students": [
     {
-      "teacherId": "1",
+      "teacherId": 1,
       "name": "Olivia Martinez",
       "id": 4,
       "age": 21,
@@ -92,7 +92,7 @@ examples below is base on the json data:
       "id": 3,
       "age": 19,
       "gender": "male",
-      "teacherId": 5
+      "teacherId": 2
     }
   ]
 }
@@ -101,7 +101,9 @@ examples below is base on the json data:
 
 select * from root.teachers
 
-select * from root.teachers left join ...
+select tea.name,tea.email from root.teachers as tea
+
+select tea.name as teacherName,stu.name from root.teachers as tea left join root.students as stu on stu.teacherId = tea.id
 
 distinct
 
