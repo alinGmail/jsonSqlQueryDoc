@@ -105,6 +105,11 @@ select tea.name,tea.email from root.teachers as tea
 
 select tea.name as teacherName,stu.name from root.teachers as tea left join root.students as stu on stu.teacherId = tea.id
 
+
+select * from root.teachers where name like 'Avery%'
+
+
+
 distinct
 
 
