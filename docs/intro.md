@@ -10,6 +10,8 @@ Let's discover **JsonSqlQuery in less than 5 minutes**.
 
 jsonSqlQuery is an app that allows you to query JSON data using SQL. With jsonSqlQuery, you can view the retrieved data in a tabular format.
 
+
+
 ### How to Use
 
 jsonSqlQuery consists of three main sections: a JSON tree on the left, a JSON input box on the top right, and a SQL input box along with a result pane on the bottom right.
@@ -25,7 +27,7 @@ Next, you can enter your SQL query in the SQL input box and click the 'Execute' 
 In the result table, you can set the display mode for each column, currently supporting text display and JSON tree view. Simply click on the table header to select the desired display mode.
 
 
-### example
+### examples
 The SQL syntax used follows the SQLite syntax. Here are some examples:
 
 examples below is base on the json data:
@@ -73,11 +75,7 @@ examples below is base on the json data:
       "email": "avery.howard@school.edu",
       "yearsOfExperience": 8,
       "officeLocation": "Building B, Room 205",
-      "courses": [
-        "Classical Mechanics",
-        "Electromagnetism",
-        "Quantum Mechanics"
-      ]
+      "courses": null
     }
   ],
   "students": [
@@ -123,8 +121,16 @@ examples below is base on the json data:
 
 ***
 
-avg
+> **select name,email,courses,major from root.teachers as tea where courses is null**
 
-isnull
+![example5](../static/img/example5.png)
+
+***
+
+> **select avg(age) from root.teachers**
+
+![example6](../static/img/example6.png)
+
+
 
 
