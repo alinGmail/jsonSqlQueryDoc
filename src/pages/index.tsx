@@ -33,8 +33,8 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       noFooter={true}
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Query JSON with SQL easily`}
+      description="`Query JSON with SQL easily">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

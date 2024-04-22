@@ -54,7 +54,7 @@ const config: Config = {
       title: 'JsonSqlQuery',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/icon.png',
       },
       items: [
         {
