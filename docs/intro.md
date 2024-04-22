@@ -25,6 +25,7 @@ Next, you can enter your SQL query in the SQL input box and click the 'Execute' 
 In the result table, you can set the display mode for each column, currently supporting text display and JSON tree view. Simply click on the table header to select the desired display mode.
 
 
+### example
 The SQL syntax used follows the SQLite syntax. Here are some examples:
 
 examples below is base on the json data:
@@ -97,19 +98,33 @@ examples below is base on the json data:
   ]
 }
 ```
+***
+> **select * from root.teachers**
 
+![example1](../static/img/example1.png)
 
-select * from root.teachers
+***
 
-select tea.name,tea.email from root.teachers as tea
+> **select tea.name,tea.email from root.teachers as tea**
 
-select tea.name as teacherName,stu.name from root.teachers as tea left join root.students as stu on stu.teacherId = tea.id
+![example2](../static/img/example2.png)
 
+***
 
-select * from root.teachers where name like 'Avery%'
+> **select tea.name as teacherName,stu.name as studentName,tea.email as teacherEmail from root.teachers as tea left join root.students as stu on stu.teacherId = tea.id**
 
+![example3](../static/img/example3.png)
 
+***
 
-distinct
+> **select * from root.teachers where name like 'Avery%'**
+
+![example4](../static/img/example4.png)
+
+***
+
+avg
+
+isnull
 
 
