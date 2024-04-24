@@ -63,6 +63,11 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
+        {
+          position: 'left',
+          label: 'download in App Store',
+          href: 'https://github.com/facebook/docusaurus',
+        }
       ],
     },
     prism: {
